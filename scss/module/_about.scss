@@ -1,0 +1,46 @@
+.about {
+  background-color: white;
+
+  &__inner {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 40px 0px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-left: solid 10px $primary;
+    padding-left: 10px;
+  }
+
+  &-img {
+    margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  &__letter::first-letter {
+    color: $primary;
+    font-size: 300%;
+    font-weight: 700;
+  }
+
+  @include medium {
+    &__inner {
+      width: 94%;
+    }
+  }
+
+  @include large {
+    &__inner {
+      width: 100%;
+    }
+  }
+}

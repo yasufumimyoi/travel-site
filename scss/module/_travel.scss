@@ -1,0 +1,56 @@
+.travel {
+  background-color: white;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+
+  &__inner {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__inner:last-child {
+    margin-bottom: 0;
+  }
+
+  &__box {
+    margin-bottom: 20px;
+  }
+
+  &__box:last-child {
+    margin-bottom: 0px;
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li {
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    display: inline-block;
+    color: $secondary;
+    border: 1px solid $secondary;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  a:hover {
+    background-color: $secondary;
+    color: white;
+  }
+}
